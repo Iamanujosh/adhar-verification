@@ -21,7 +21,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 CORS(app)
-MODEL_PATH = os.path.join(os.path.dirname(__file__), 'savedModels', 'train_models.joblib')
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'savedModel', 'train_models.joblib')
 try:
     model = joblib.load(MODEL_PATH)
     print("✅ Model loaded successfully!")
