@@ -12,7 +12,7 @@ const Verify = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:5000/api/generate-report', {
+      const response = await fetch('https://adhar-verification-flask2.onrender.com/api/generate-report', {
         method: 'POST',
         body: formData,
       });
